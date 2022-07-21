@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import vector from '../images/bg-vectors/7.png'
-import Button from 'react-bootstrap/Button';
+import { Button } from '../App';
 import InputGroup from "react-bootstrap/InputGroup"
 import Form from "react-bootstrap/Form"
 import { IoMailOutline } from "react-icons/io5"

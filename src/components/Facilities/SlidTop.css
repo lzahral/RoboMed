@@ -10,7 +10,7 @@
 }
 
 .bg-text {
-    background: rgba(41, 169, 225, 0.1);
+    background: rgba(41, 169, 225, 0.1) !important;
     border-radius: 8px;
 }
 

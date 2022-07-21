@@ -15,22 +15,12 @@ const Slider = () => {
             <Image className='image3' src={vector3} />
             <h6 className='text-primary'>testimonial</h6>
             <h4>Patients Say About Us</h4>
-            <Carousel controls={false} className='div my-5'>
-                <Carousel.Item>
-                    <Slide />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Slide />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Slide />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Slide />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Slide />
-                </Carousel.Item>
+            <Carousel controls={false} className='my-5'>
+                <Carousel.Item><Slide /></Carousel.Item>
+                <Carousel.Item><Slide /></Carousel.Item>
+                <Carousel.Item><Slide /></Carousel.Item>
+                <Carousel.Item><Slide /></Carousel.Item>
+                <Carousel.Item><Slide /></Carousel.Item>
             </Carousel>
         </div>
     );

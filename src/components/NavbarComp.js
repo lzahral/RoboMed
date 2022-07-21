@@ -6,16 +6,20 @@ import logo_l from '../images/logo-light.png';
 import logo_d from '../images/logo-dark.png';
 import Image from 'react-bootstrap/Image';
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
+import { Btn } from '../App'; 
 
-
-const NavbarComp = ({ theme, setTheme }) => {
+const NavbarComp = ({ theme, setTheme, setCurrentTheme}) => {
+  const clickHandler=()=>{
+    setTheme(s => !s)
+    setCurrentTheme(theme?"light":"dark")
+  }
   return (
     <Navbar collapseOnSelect expand="lg" variant={!theme ? "dark" : "light"}>
       <Container className='me-auto'>
         <Navbar.Brand href="#home">
           <Image src={theme ? logo_l : logo_d} style={{ width: "30%", paddingRight: "10px" }} alt="logo" />
           <p className='d-inline p-3 fs-3 '>RoboMed</p>
-          <button className='iconBtn' onClick={() => setTheme(s => !s)}>{theme ? <IoMoonOutline className='fs-5' /> : <IoSunnyOutline className='fs-5' />}</button>
+          <Btn onClick={() => clickHandler()}>{theme ? <IoMoonOutline className='fs-5' /> : <IoSunnyOutline className='fs-5' />}</Btn>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
